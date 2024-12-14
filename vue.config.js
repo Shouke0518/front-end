@@ -2,6 +2,7 @@ const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
   devServer: {
-    proxy: 'http://localhost:3000',
+    proxy: 'https://back-end-cwng.onrender.com',
+    allowedHosts: ['front-end-c4wi.onrender.com'],
   }
 })
