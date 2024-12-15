@@ -132,7 +132,7 @@ export default {
         });
     },
     encrypt(plaintext) {
-      const wsUrl = process.env.VUE_APP_BACKEND_URL || 'wss://back-end-cwng.onrender.com' || "wss://localhost:3000";
+      const wsUrl = 'wss://back-end-cwng.onrender.com' || "wss://localhost:3000";
       const socket = new WebSocket(wsUrl);
 
       fetch(`${wsUrl}/crypto/encrypt`, {
