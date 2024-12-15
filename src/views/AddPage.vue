@@ -132,7 +132,7 @@ export default {
         });
     },
     encrypt(plaintext) {
-      const socket = new WebSocket("ws://localhost:8000");
+      const socket = new WebSocket("wss://back-end-cwng.onrender.com" || "wss://localhost:3000");
 
       fetch("/crypto/encrypt", {
         method: "POST",

@@ -174,7 +174,7 @@ export default {
     };
   },
   mounted() {
-    this.socket = new WebSocket("ws://localhost:8000");
+    this.socket = new WebSocket("wss://back-end-cwng.onrender.com" || "wss://localhost:3000");
 
     this.socket.onopen = () => {
       console.log("WebSocket connection opened.");

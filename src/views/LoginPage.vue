@@ -107,10 +107,10 @@ export default {
     },
 
     loginByGoogle() {
-      window.location.href = "http://localhost:3000/auth/google";
+      window.location.href = process.env.BACKEND_URL || 'http://localhost:3000';
     },
     loginByGithub() {
-      window.location.href = "http://localhost:3000/auth/github";
+      window.location.href = process.env.BACKEND_URL || 'http://localhost:3000';
     },
     showPassword() {
       this.passwordVisible = !this.passwordVisible;
