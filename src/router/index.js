@@ -12,6 +12,8 @@ import DetailPage from '../views/DetailPage.vue'
 import test from '../views/test.vue'
 import NotFoundPage from '../views/NotFoundPage.vue'
 
+console.log("至router.index.js")
+
 const routes = [
   // {
   //   path: '/add',
