@@ -84,7 +84,7 @@ export default {
             addedBy: localStorage.getItem("userEmail"),
           };
 
-          return fetch("/db/items", {
+          return fetch("https://back-end-cwng.onrender.com/db/items", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -111,7 +111,7 @@ export default {
       const formData = new FormData();
       formData.append("file", this.file);
 
-      return fetch("/imgur/upload", {
+      return fetch("https://back-end-cwng.onrender.com/imgur/upload", {
         method: "POST",
         body: formData,
       })
@@ -132,9 +132,10 @@ export default {
         });
     },
     encrypt(plaintext) {
-      const socket = new WebSocket("wss://back-end-cwng.onrender.com" || "wss://localhost:3000");
+      const wsUrl = process.env.VUE_APP_BACKEND_URL || 'wss://back-end-cwng.onrender.com' || "wss://localhost:3000";
+      const socket = new WebSocket(wsUrl);
 
-      fetch("/crypto/encrypt", {
+      fetch(`${wsUrl}/crypto/encrypt`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
