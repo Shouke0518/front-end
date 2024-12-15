@@ -4,6 +4,7 @@ module.exports = defineConfig({
   devServer: {
     allowedHosts: 'all',
     host: '0.0.0.0',
+    port: process.env.PORT || 3000,
     proxy: {
       '/': {
         target: process.env.BACKEND_URL || 'http://localhost:3000',
