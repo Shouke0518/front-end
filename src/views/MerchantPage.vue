@@ -48,7 +48,7 @@ export default {
     },
     async store() {
       try {
-        const response = await fetch("/db/store", {
+        const response = await fetch("https://back-end-cwng.onrender.com/db/store", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -70,7 +70,7 @@ export default {
     },
     async append() {
       try {
-        const response = await fetch("/db/append", {
+        const response = await fetch("https://back-end-cwng.onrender.com/db/append", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

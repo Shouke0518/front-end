@@ -321,7 +321,7 @@ export default {
       });
     },
     decrypt(input) {
-      fetch("/crypto/decrypt", {
+      fetch("https://back-end-cwng.onrender.com/crypto/decrypt", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -344,7 +344,7 @@ export default {
     },
   },
   created() {
-    fetch("/db/items", {
+    fetch("https://back-end-cwng.onrender.com/db/items", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

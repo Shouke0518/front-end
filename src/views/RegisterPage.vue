@@ -81,7 +81,7 @@ export default {
         role: role,
       };
 
-      fetch("/auth/register", {
+      fetch("https://back-end-cwng.onrender.com/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

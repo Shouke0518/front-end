@@ -90,7 +90,7 @@ export default {
     async findBetterDeal(item) {
       try {
         const response = await fetch(
-          `/db/better/${item.discountedPrice}/${item.groceryName}`
+          `https://back-end-cwng.onrender.com/db/better/${item.discountedPrice}/${item.groceryName}`
         );
         const data = await response.json();
         this.betterDeals = data;

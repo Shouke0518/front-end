@@ -90,7 +90,7 @@ export default {
   methods: {
     getData() {
       let storeName = this.$route.params.storeName;
-      const url = "/db/items/" + storeName;
+      const url = "https://back-end-cwng.onrender.com/db/items/" + storeName;
       fetch(url, {
         method: "GET",
         headers: {
@@ -125,7 +125,7 @@ export default {
       return images[groceryName] || "images/default.png";
     },
     addToCart(item) {
-      fetch("/db/items/store", {
+      fetch("https://back-end-cwng.onrender.com/db/items/store", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

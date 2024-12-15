@@ -131,7 +131,7 @@ export default {
         alert("請選擇自取或外送");
         return;
       }
-      fetch("/mail/send", {
+      fetch("https://back-end-cwng.onrender.com/mail/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

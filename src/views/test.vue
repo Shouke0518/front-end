@@ -12,7 +12,7 @@ export default {
         async fetchAndDownloadData() {
             try {
                 // 從後端獲取資料
-                const response = await fetch("/db/generate");
+                const response = await fetch("https://back-end-cwng.onrender.com/db/generate");
                 if (!response.ok) {
                     throw new Error("無法獲取資料，請檢查後端服務！");
                 }

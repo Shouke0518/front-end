@@ -33,7 +33,7 @@ export default {
       const email = localStorage.getItem("userEmail");
 
       // 向伺服器發送請求
-      const response = await fetch('/db/user', {
+      const response = await fetch('https://back-end-cwng.onrender.com/db/user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

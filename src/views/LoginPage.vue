@@ -47,7 +47,7 @@ export default {
         email: this.email,
         password: this.password,
       };
-      fetch("/auth/login", {
+      fetch("https://back-end-cwng.onrender.com/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -84,7 +84,7 @@ export default {
     },
     async getRole(email) {
       try {
-        const response = await fetch("/db/role", {
+        const response = await fetch("https://back-end-cwng.onrender.com/db/role", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

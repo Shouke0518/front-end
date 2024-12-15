@@ -34,7 +34,7 @@ export default {
     },
     methods: {
         addToCart(item) {
-            fetch("/db/items/user", {
+            fetch("https://back-end-cwng.onrender.com/db/items/user", {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",

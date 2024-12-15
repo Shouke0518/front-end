@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     logout() {
-      fetch("/auth/logout", {
+      fetch("https://back-end-cwng.onrender.com/auth/logout", {
         method: "POST",
       })
         .then((response) => {
