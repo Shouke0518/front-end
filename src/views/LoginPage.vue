@@ -107,10 +107,10 @@ export default {
     },
 
     loginByGoogle() {
-      window.location.href = process.env.BACKEND_URL || 'http://localhost:3000';
+      window.location.href = "https://back-end-cwng.onrender" || 'http://localhost:3000';
     },
     loginByGithub() {
-      window.location.href = process.env.BACKEND_URL || 'http://localhost:3000';
+      window.location.href = "https://back-end-cwng.onrender" || 'http://localhost:3000';
     },
     showPassword() {
       this.passwordVisible = !this.passwordVisible;
