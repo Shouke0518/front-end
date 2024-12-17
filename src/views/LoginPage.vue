@@ -17,6 +17,7 @@
           <p>Don't have an account? <a href="register">Register</a></p>
         </div>
       </form>
+      <!--
       <div class="other-login">
         <button id="loginByGoogle" @click="loginByGoogle" class="button">
           Google
@@ -27,6 +28,7 @@
           <img src="../assets/github.png" class="github-icon" alt="..." style="max-width: 28px" />
         </button>
       </div>
+      -->
     </div>
   </div>
 </template>
