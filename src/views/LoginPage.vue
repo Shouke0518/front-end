@@ -52,7 +52,6 @@ export default {
         headers: {
           "Content-Type": "application/json",
         },
-        credentials: 'include',
         body: JSON.stringify(formData),
       })
         .then(async (response) => {
@@ -108,10 +107,10 @@ export default {
     },
 
     loginByGoogle() {
-      window.location.href = "https://back-end-cwng.onrender.com" || 'http://localhost:3000';
+      window.location.href = "https://back-end-cwng.onrender.com/auth/google" || 'http://localhost:3000';
     },
     loginByGithub() {
-      window.location.href = "https://back-end-cwng.onrender.com" || 'http://localhost:3000';
+      window.location.href = "https://back-end-cwng.onrender.com/auth/github" || 'http://localhost:3000';
     },
     showPassword() {
       this.passwordVisible = !this.passwordVisible;
